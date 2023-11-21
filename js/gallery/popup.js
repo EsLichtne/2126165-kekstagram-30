@@ -1,4 +1,5 @@
 import {renderComments} from './comments.js';
+import {removeLikes} from './likes.js';
 
 const popup = document.querySelector('.big-picture');
 const closeButton = document.querySelector('.big-picture__cancel');
@@ -29,6 +30,7 @@ const closePopup = () => {
   document.removeEventListener('keydown', onDocumentKeydown);
   document.removeEventListener('click', onDocumentClick);
   document.dispatchEvent(new CustomEvent('popupClose'));
+  removeLikes();
 };
 
 const renderPopup = (properties) => {
