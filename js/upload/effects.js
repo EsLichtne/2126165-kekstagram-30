@@ -1,5 +1,4 @@
 import '../../vendor/nouislider/nouislider.js';
-import '../../vendor/nouislider/nouislider.css';
 
 const ranges = {
   none: [0, 100, 1],
